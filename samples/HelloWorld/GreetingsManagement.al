@@ -23,6 +23,7 @@ codeunit 70051100 GreetingsManagement
             9:  exit('Danish: Hej verden');
             10: exit('Polish: Witaj świecie');
             11: exit('Pig Latin: Ellohay Orldway');
+            25: exit('Frisian: Hallo wrâld');
         else
             exit('Hello, World'); // Default to the good old one.
         end;
@@ -32,6 +33,6 @@ codeunit 70051100 GreetingsManagement
     procedure GetRandomGreeting() : Text;
     begin
         Randomize;
-        exit(GetHelloWorldText(Random(13)));
+        exit(GetHelloWorldText(Random(26)));
     end;
 }
